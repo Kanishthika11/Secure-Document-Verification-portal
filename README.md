@@ -320,4 +320,4 @@ Educational project for cybersecurity laboratory evaluation.
 
 ---
 
-**Created**: 2024 | **Type**: Academic Security Project | **Framework**: MERN Stack
+**Created**: 2026 | **Type**: Academic Security Project | **Framework**: MERN Stack
