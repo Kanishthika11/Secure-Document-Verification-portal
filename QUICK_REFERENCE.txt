@@ -1,0 +1,145 @@
+╔════════════════════════════════════════════════════════════════════════╗
+║     SECURE STUDENT DOCUMENT VERIFICATION PORTAL - QUICK REFERENCE      ║
+║                         Ready to Run MERN App                          ║
+╚════════════════════════════════════════════════════════════════════════╝
+
+🚀 START IN 3 STEPS:
+
+  Terminal 1:                Terminal 2:              Browser:
+  cd backend                 cd frontend              http://localhost:3000
+  npm install                npm install
+  npm run dev                npm run dev
+
+═══════════════════════════════════════════════════════════════════════
+
+🔐 OTP TESTING:
+
+  1. Click "Register" → Create account
+  2. Go back and Login with credentials
+  3. ⚠️ CHECK BACKEND CONSOLE (Terminal 1)
+     Look for box:
+     ═══════════════════════════════════════════════
+     🔐 OTP GENERATED FOR LOGIN
+     ═══════════════════════════════════════════════
+     OTP CODE: 123456
+     ═══════════════════════════════════════════════
+  4. Copy the OTP CODE from console
+  5. Paste into verification page
+  6. Click "Verify & Sign In"
+  7. Dashboard loads!
+
+═══════════════════════════════════════════════════════════════════════
+
+📋 DOCUMENTATION MAP:
+
+  • TESTING_GUIDE.md       ← START HERE for OTP testing
+  • QUICKSTART.md          ← Quick setup guide
+  • PROJECT_COMPLETE.md    ← Full project overview
+  • SETUP.md               ← Detailed installation
+  • SPECIFICATIONS.md      ← Technical specifications
+  • ARCHITECTURE.md        ← System design
+  • VIVA_GUIDE.md          ← Exam preparation
+  • IMPROVEMENTS.md        ← What was fixed
+
+═══════════════════════════════════════════════════════════════════════
+
+🎯 FEATURES:
+
+  ✅ User Registration with RSA key generation
+  ✅ Login with OTP verification (6-digit, 2-minute expiry)
+  ✅ JWT token authentication (1-hour expiry)
+  ✅ Role-based dashboards (Student/Faculty/Admin)
+  ✅ Document encryption (AES-256)
+  ✅ Digital signatures (RSA)
+  ✅ Activity logging & audit trail
+  ✅ Tamper detection for documents
+  ✅ Professional dark blue UI
+  ✅ Mobile responsive design
+
+═══════════════════════════════════════════════════════════════════════
+
+📝 USER CREDENTIALS (Create your own via Register):
+
+  Example:
+    Username: teststudent
+    Password: Test@123456
+    Email: student@test.com
+    Role: Student
+
+═══════════════════════════════════════════════════════════════════════
+
+🔧 ENVIRONMENT SETUP:
+
+  Backend/.env:
+    PORT=5000
+    MONGODB_URI=mongodb://localhost:27017/document-portal
+    JWT_SECRET=your-secret-key-min-32-chars
+    NODE_ENV=development
+
+  Frontend/.env.local:
+    VITE_API_URL=http://localhost:5000
+
+═══════════════════════════════════════════════════════════════════════
+
+🐛 COMMON ISSUES:
+
+  Problem: OTP not showing in console
+  → Check Terminal 1 (backend), not browser console
+  → Verify backend running: npm run dev in /backend
+  → Look for "🔐 OTP GENERATED FOR LOGIN" box
+
+  Problem: OTP verification fails
+  → Copy exact 6 digits from console
+  → Check 2-minute timer hasn't expired
+  → Try logging in again if expired
+
+  Problem: MongoDB errors
+  → Start MongoDB: mongod command
+  → Check .env MONGODB_URI is correct
+
+═══════════════════════════════════════════════════════════════════════
+
+🎓 FOR VIVA PREPARATION:
+
+  Show:
+    ✓ Registration process
+    ✓ OTP generation in console
+    ✓ OTP verification flow
+    ✓ Role-based dashboards
+    ✓ Document encryption
+    ✓ Activity logs
+    ✓ Security features
+
+  Explain:
+    • Bcryptjs password hashing (10 salt rounds)
+    • OTP mechanism (2-minute expiry)
+    • JWT token security (1-hour expiry)
+    • RSA 2048-bit encryption
+    • AES-256 document encryption
+    • SHA-256 integrity hashing
+    • Role-based access control
+
+═══════════════════════════════════════════════════════════════════════
+
+🌐 PORTS:
+
+  Backend API:     http://localhost:5000
+  Frontend:        http://localhost:3000
+  MongoDB:         localhost:27017
+
+═══════════════════════════════════════════════════════════════════════
+
+✅ READY TO RUN - No additional setup needed!
+
+  Files created:  ✅
+  Dependencies:   ✅ (npm install to download)
+  Database:       ✅ (MongoDB local)
+  Security:       ✅ (All implemented)
+  Documentation:  ✅ (Complete)
+
+═══════════════════════════════════════════════════════════════════════
+
+Need Help? Read TESTING_GUIDE.md for complete walkthrough
+
+Last Updated: 2024
+Status: ✅ COMPLETE & READY TO RUN
