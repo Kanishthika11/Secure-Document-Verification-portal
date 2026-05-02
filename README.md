@@ -1,4 +1,4 @@
-# Secure Student Document Verification Portal - Complete MERN Application
+<img width="564" height="344" alt="image" src="https://github.com/user-attachments/assets/7538c079-072c-4d39-86be-d95556088d90" /># Secure Student Document Verification Portal - Complete MERN Application
 
 **Ready-to-Run Full-Stack Application** | MongoDB + Express + React + Node.js
 
@@ -318,6 +318,11 @@ The system is designed to be easily explainable during academic viva:
 
 Educational project for cybersecurity laboratory evaluation.
 
+## Deployed in Vercel
+```bash
+visit:
+https://secure-document-verification-portal-4ugefnajb.vercel.app/
+```
 ---
 
 **Created**: 2026 | **Type**: Academic Security Project | **Framework**: MERN Stack
